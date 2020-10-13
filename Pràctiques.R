@@ -10,8 +10,9 @@
 
 
 
-
-
+# Canviar valor amb mutate.
+# Usem el mateix nom de variable, en aquest exemple la variable "name".
+x <- mutate(people, name = str_replace(name, "Woods", "Fustes"))
 
 
 
