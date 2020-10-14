@@ -81,7 +81,8 @@ t <- mutate(t,
             # FaltenSegs100M  = 100000000 - trunc(SegonsViscuts %% 100000000)
 )
 
-View(t)
+
+t <- 
 
 x <- 3400
 y <- 1000 - x %% 1000
