@@ -52,6 +52,6 @@ t <- mutate(t,
 
 Mostrar el resultat.
 ```{r resultat}
-t
+print(t)
 ```
 

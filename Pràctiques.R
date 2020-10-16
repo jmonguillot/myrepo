@@ -1,22 +1,46 @@
 #
-# -------------------------
+# =========================
 # Pràctiques diverses amb R
-# -------------------------
+# =========================
 
+library(tidyverse)
 
-# Trucs diversos
+# --------------------------------------------
+# Shortcuts
 # --------------------------------------------
 
+# Alt -       Inserta el símbol <-
+# Ctl-Maj-M   Inserta el símbol %>%
+# 
+# Ctl Enter   Executar tot el seleccionat.
+# Alt Enter   Executar la línia on està el cursor.
+# Ctrl-Maj-C  Comentar línies.
+# 
+# Alt-Maj-K   Mostrar tots els shortcuts.
+# Ctl-Alt-K   Des d'on està el cursor, mostrar les mateixes paraules.
+# Ctl 1       Anar a panell Source.
+# Ctl 2       Anar a panell Console.
+# 
+# (x <- filter(df, xxx==1))  Entre parèntesi, genera resultat i el mostra alhora
+  
 
-
+# --------------------------------------------
+# Temes diversos
+# --------------------------------------------
 
 # Canviar valor amb mutate.
 # Usem el mateix nom de variable, en aquest exemple la variable "name".
 x <- mutate(people, name = str_replace(name, "Woods", "Fustes"))
 
 
+# Validar números propers:
+near()
+# Exemple:
+# sqrt(2) == 2        ==> FALSE
+# near(sqrt(2)^2, 2)  ==> TRUE
 
 
+# Si el nom d'una columna no comença amb lletra m'hi he de referenciar amb backstick (`).
 
 
 

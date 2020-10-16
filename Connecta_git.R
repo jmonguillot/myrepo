@@ -1,5 +1,6 @@
 #
 # proves de R amb git
+# ho he fet però potser no és necessari per connectar amb git.
 
 library(usethis)
 

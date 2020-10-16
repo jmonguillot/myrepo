@@ -1,12 +1,16 @@
 #
+# =========================
 # R for Data Science
+# =========================
+
+# Basat en el llibre online https://r4ds.had.co.nz/
+# Les solucions als exercicis estan a https://jrnold.github.io/r4ds-exercise-solutions/
 
 library(tidyverse)
 
 # mpg és un data frame dins del package tidyverse. Significa 'miles per gallon'
 
-
-# Comptatge:
+# Comptatge d'una variable:
 mpg %>%count(cty)
   
   
