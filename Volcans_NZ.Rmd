@@ -1,0 +1,21 @@
+---
+title: "Volcans NZ"
+author: "Joan"
+date: "14/10/2020"
+output: html_document
+---
+
+```{r include = FALSE}
+library(leaflet)
+library(dplyr)
+```
+
+Use the leaflet map below to explore the actual Maunga Whau volcano in Auckland, NZ. 
+
+```{r}
+leaflet() %>%
+  setView(lng=174.764, lat=-36.877, zoom = 16) %>% 
+  addTiles() %>%
+  addMarkers(lng=174.764, lat=-36.877, popup="Maunga Whau") 
+```
+
