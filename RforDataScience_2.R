@@ -221,6 +221,16 @@ not_cancelled %>%
   count(tailnum, wt=distance) %>%
   arrange(desc(n))
 
+# per variables contínues es poden fer particions
+not_cancelled %>% 
+  count(cut_width(arr_delay, 60))
+# vegem-ho gràficament:
+not_cancelled %>%
+filter(arr_delay<200) %>% 
+ggplot(mapping = aes(x = arr_delay)) +
+  geom_histogram(binwidth = 20)
+
+
 # Comptatge amb condicions. 
 # El valor lògic es transforma en 1 o 0. Així no cal afegir variables amb MUTATE.
 not_cancelled %>% 
@@ -232,7 +242,6 @@ not_cancelled %>%
 not_cancelled %>% 
   group_by(year, month, day) %>% 
   summarise(hour_prop = mean(arr_delay > 60))
-
 
 
 # 5.6.1 
